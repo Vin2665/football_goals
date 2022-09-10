@@ -24,7 +24,7 @@ def main():
         query = np.array([Attendance, Temperature, Relative_humidity, Dewpoint, SurfacePressure, Rain, Wind_speed, Wind_direction])
         query = query.reshape(1, 8)
 
-        st.title("Predicted Match Goals Are " + str.round(model.predict(query)[0]))
+        st.title("Predicted Match Goals Are " + str(model.predict(query)[0]))
 
 if __name__ == '__main__':
     main()
